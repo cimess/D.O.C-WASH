@@ -6,7 +6,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Facility Manager",
     company: "TechHub Industries",
-    content: "D.O.C Wash transformed our production floor. The difference in air quality and overall cleanliness was noticeable immediately. Their team is professional, efficient, and thorough.",
+    content: "D.O.C Wash & Clean transformed our production floor. The difference in air quality and overall cleanliness was noticeable immediately. Their team is professional, efficient, and thorough.",
     rating: 5,
     avatar: "https://ui-avatars.com/api/?name=Sarah+Johnson&background=0D8ABC&color=fff"
   },
@@ -14,7 +14,7 @@ const testimonials = [
     name: "Michael Chen",
     role: "Homeowner",
     company: "Residential Client",
-    content: "I've used several cleaning services before, but none compare to the detail D.O.C Wash puts in. They even got stains out of my carpet that I thought were permanent. Highly recommended!",
+    content: "I've used several cleaning services before, but none compare to the detail D.O.C Wash & Clean puts in. They even got stains out of my carpet that I thought were permanent. Highly recommended!",
     rating: 5,
     avatar: "https://ui-avatars.com/api/?name=Michael+Chen&background=10B981&color=fff"
   },
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Amara Okeke",
     role: "Operations Director",
     company: "Lagos Logistics",
-    content: "Reliability is key for us, and D.O.C Wash delivers every single time. Their bio-hazard team handled a sensitive situation with absolute professionalism. A partner we trust.",
+    content: "Reliability is key for us, and D.O.C Wash & Clean delivers every single time. Their bio-hazard team handled a sensitive situation with absolute professionalism. A partner we trust.",
     rating: 5,
     avatar: "https://ui-avatars.com/api/?name=Amara+Okeke&background=F59E0B&color=fff"
   },

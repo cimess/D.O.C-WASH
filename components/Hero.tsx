@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
     if (isPlaying) return;
     setIsPlaying(true);
     try {
-      const base64Audio = await generateSpeech("Welcome to D.O.C Wash. We provide world-class industrial and residential cleaning services.");
+      const base64Audio = await generateSpeech("Welcome to D.O.C Wash and Clean. We provide world-class industrial and residential cleaning services.");
       if (base64Audio) {
         const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
         const audioBuffer = await decodeAudioData(base64Decode(base64Audio), audioContext, 24000);
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             Hygiene Solutions
         </div>
         <h1 ref={headlineRef} className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight drop-shadow-sm">
-          D.O.C <span className="text-blue-600">Wash</span>
+          D.O.C <span className="text-blue-600">Wash & Clean</span>
         </h1>
         <p ref={subheadRef} className="text-xl md:text-2xl text-white/40 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
           The future of clean. We combine advanced robotics and eco-friendly chemistry to deliver pristine results for homes and industries.

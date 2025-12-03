@@ -25,7 +25,7 @@ const LocationFinder: React.FC = () => {
                     const maps = result.chunks
                         .filter(c => c.maps)
                         .map(c => c.maps!);
-                    
+
                     if (maps.length === 0) {
                         setError("No nearby locations found by the AI.");
                     } else {
@@ -53,12 +53,12 @@ const LocationFinder: React.FC = () => {
   return (
     <section className="py-20 bg-white border-t border-slate-100">
       <div className="max-w-5xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-slate-900 mb-6">Find D.O.C Partners Nearby</h2>
+        <h2 className="text-3xl font-bold text-slate-900 mb-6">Find D.O.C Wash & Clean Partners Nearby</h2>
         <p className="text-slate-600 mb-8 max-w-2xl mx-auto">
           We partner with top-tier supply stores and service centers. Use our AI map integration to find the closest verified partner to your current location.
         </p>
 
-        <button 
+        <button
             onClick={handleFindNearby}
             disabled={loading}
             className="px-8 py-3 bg-slate-900 text-white font-bold rounded-lg shadow hover:bg-slate-800 transition-all flex items-center gap-2 mx-auto mb-10">
@@ -81,9 +81,9 @@ const LocationFinder: React.FC = () => {
                 {locations.map((loc, i) => (
                     <div key={i} className="p-6 border border-slate-200 rounded-xl hover:shadow-lg transition-shadow">
                         <h4 className="font-bold text-lg text-slate-900 mb-2 truncate">{loc.title}</h4>
-                        <a 
-                            href={loc.uri} 
-                            target="_blank" 
+                        <a
+                            href={loc.uri}
+                            target="_blank"
                             rel="noreferrer"
                             className="text-blue-600 text-sm hover:underline block mb-3">
                             View on Google Maps &rarr;

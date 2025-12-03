@@ -28,7 +28,7 @@ const ChatBot: React.FC = () => {
 
   const handleSend = async () => {
     if (!input.trim() || !chatRef.current) return;
-    
+
     const userMsg = input;
     setMessages(prev => [...prev, { role: 'user', text: userMsg }]);
     setInput('');
@@ -41,11 +41,11 @@ const ChatBot: React.FC = () => {
       // unless user explicitly asks for "search" or "find info".
       // But user requirement says: "Use Google Search data... where relevant"
       // We will try to detect if it's an informational query vs a service query.
-      
+
       const isInfoQuery = /tips|how to|standards|news|guide/i.test(userMsg);
-      
+
       let replyText = "";
-      
+
       if (isInfoQuery) {
           // Use search grounding
           const result = await searchCleaningTips(userMsg);
@@ -56,7 +56,7 @@ const ChatBot: React.FC = () => {
           const result = await chatRef.current.sendMessage({ message: userMsg });
           replyText = result.text;
       }
-      
+
       setMessages(prev => [...prev, { role: 'model', text: replyText }]);
     } catch (error) {
       setMessages(prev => [...prev, { role: 'model', text: "Sorry, I encountered an error. Please try again.", isError: true }]);
@@ -68,7 +68,7 @@ const ChatBot: React.FC = () => {
   return (
     <>
       {/* Floating Button */}
-      <button 
+      <button
         onClick={toggleChat}
         className="fixed bottom-6 right-6 z-50 p-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-2xl transition-all transform hover:scale-110">
         {isOpen ? (
@@ -86,16 +86,16 @@ const ChatBot: React.FC = () => {
       {isOpen && (
         <div className="fixed bottom-24 right-6 w-80 md:w-96 h-[500px] bg-white rounded-2xl shadow-2xl z-50 flex flex-col overflow-hidden border border-slate-200">
           <div className="bg-slate-900 p-4 text-white flex justify-between items-center">
-            <h3 className="font-bold">D.O.C Assistant</h3>
+            <h3 className="font-bold">D.O.C Wash & Clean Assistant</h3>
             <span className="text-xs bg-blue-600 px-2 py-1 rounded-full">Gemini 3 Pro</span>
           </div>
-          
+
           <div className="flex-1 overflow-y-auto p-4 bg-slate-50 space-y-4">
             {messages.map((m, i) => (
               <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${
-                    m.role === 'user' 
-                    ? 'bg-blue-600 text-white rounded-br-none' 
+                    m.role === 'user'
+                    ? 'bg-blue-600 text-white rounded-br-none'
                     : 'bg-white text-slate-800 border border-slate-200 shadow-sm rounded-bl-none'
                 }`}>
                   {m.text}
@@ -111,7 +111,7 @@ const ChatBot: React.FC = () => {
                     </div>
                 </div>
             )}
-            
+
             {/* Grounding Sources */}
             {groundingChunks.length > 0 && (
                 <div className="mt-2 p-2 bg-slate-100 rounded text-xs text-slate-500">
@@ -138,7 +138,7 @@ const ChatBot: React.FC = () => {
                 placeholder="Type your question..."
                 className="flex-1 border border-slate-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
               />
-              <button 
+              <button
                 onClick={handleSend}
                 disabled={isTyping || !input.trim()}
                 className="bg-slate-900 text-white p-2 rounded-full hover:bg-slate-700 disabled:opacity-50">

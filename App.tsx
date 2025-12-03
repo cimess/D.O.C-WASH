@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <header className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="text-2xl font-black tracking-tighter text-slate-900 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            D.O.C<span className="text-blue-600">.</span>
+            D.O.C <span className="text-blue-600">Wash & Clean</span>
           </div>
           <nav className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
             <a href="#services" className="hover:text-blue-600 transition-colors">Services</a>
@@ -38,7 +38,7 @@ const App: React.FC = () => {
       <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-             <h4 className="text-white font-bold text-lg mb-4">D.O.C Wash</h4>
+             <h4 className="text-white font-bold text-lg mb-4">D.O.C Wash & Clean</h4>
              <p className="text-sm">Setting the new standard for industrial and residential hygiene through technology and expertise.</p>
           </div>
           <div>
@@ -64,7 +64,7 @@ const App: React.FC = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 mt-12 text-center text-xs">
-            © {new Date().getFullYear()} D.O.C Wash Services. Powered by Gemini.
+            © {new Date().getFullYear()} D.O.C Wash & Clean Services. Powered by Gemini.
         </div>
       </footer>
 

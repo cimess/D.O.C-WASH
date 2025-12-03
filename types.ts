@@ -14,15 +14,15 @@ export interface ChatMessage {
 
 export interface GroundingChunk {
   web?: {
-    uri: string;
-    title: string;
+    uri?: string;
+    title?: string;
   };
   maps?: {
-    uri: string;
-    title: string;
+    uri?: string;
+    title?: string;
     placeAnswerSources?: {
         reviewSnippets?: {
-            content: string;
+            content?: string;
         }[]
     }[]
   };

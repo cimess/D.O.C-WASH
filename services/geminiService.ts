@@ -10,7 +10,7 @@ export const createChatSession = () => {
   return ai.chats.create({
     model: 'gemini-2.5-pro',
     config: {
-      systemInstruction: 'You are D.O.C Wash\'s helpful virtual assistant. You help customers with scheduling, service details (Industrial, Residential, Specialized), and general inquiries. Be polite, professional, and concise.',
+      systemInstruction: 'You are D.O.C Wash & Clean\'s helpful virtual assistant. You help customers with scheduling, service details (Industrial, Residential, Specialized), and general inquiries. Be polite, professional, and concise.',
     },
   });
 };
@@ -65,7 +65,7 @@ export const searchCleaningTips = async (query: string) => {
 export const findNearbyLocations = async (userLat?: number, userLng?: number) => {
     // Note: In a real app we'd search for actual branches. Here we simulate finding "our" branches or partners.
     // We will ask for cleaning supplies stores nearby as a proxy for "locations relevant to cleaning"
-    // to demonstrate the map tool functionality since D.O.C Wash is fictional.
+    // to demonstrate the map tool functionality since D.O.C Wash & Clean is fictional.
     const prompt = "Find top rated commercial cleaning supply stores or services near me.";
 
     const config: any = {
@@ -130,7 +130,7 @@ export const connectLiveSession = (
     },
     config: {
         responseModalities: [Modality.AUDIO],
-        systemInstruction: "You are D.O.C Wash's expert cleaning consultant. Speak briefly, enthusiastically, and professionally about cleaning services (Industrial, Home, Office).",
+        systemInstruction: "You are D.O.C Wash & Clean's expert cleaning consultant. Always speak in English. Speak briefly, enthusiastically, and professionally about cleaning services (Industrial, Home, Office).",
         speechConfig: {
             voiceConfig: { prebuiltVoiceConfig: { voiceName: 'Zephyr' } }
         }
