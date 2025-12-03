@@ -12,8 +12,8 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-200 selection:text-blue-900">
       <header className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="text-2xl font-black tracking-tighter text-slate-900 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            D.O.C <span className="text-blue-600">Wash & Clean</span>
+          <div className="flex items-center gap-2 cursor-pointer " onClick={() => window.scrollTo(0,0)}>
+            <img src="/assets/logo.jpg" alt="D.O.C Wash & Clean Logo" className="h-12 w-auto object-contain rounded-full" />
           </div>
           <nav className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
             <a href="#services" className="hover:text-blue-600 transition-colors">Services</a>
@@ -36,7 +36,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
              <h4 className="text-white font-bold text-lg mb-4">D.O.C Wash & Clean</h4>
              <p className="text-sm">Setting the new standard for industrial and residential hygiene through technology and expertise.</p>
