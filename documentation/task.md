@@ -1,0 +1,28 @@
+# Task List
+
+- [x] Explore project structure <!-- id: 0 -->
+- [x] Create implementation plan <!-- id: 1 -->
+- [x] Install dependencies (tailwindcss, postcss, autoprefixer) <!-- id: 2 -->
+- [x] Initialize Tailwind and PostCSS configuration <!-- id: 3 -->
+- [x] Create input CSS file (`src/input.css`) <!-- id: 4 -->
+- [x] Update `index.html` to remove CDN and link output CSS <!-- id: 5 -->
+- [x] Configure build script in `package.json` <!-- id: 6 -->
+- [x] Run build and verify output <!-- id: 7 -->
+- [x] Verify layout with screenshot <!-- id: 8 -->
+- [x] Revert to CDN and capture screenshot <!-- id: 9 -->
+- [x] Compare CDN vs PostCSS layouts <!-- id: 10 -->
+- [x] Restore PostCSS and fix discrepancies <!-- id: 11 -->
+- [x] Final comparison with browser screen <!-- id: 12 -->
+- [x] Fix layout with v4 syntax and verify <!-- id: 13 -->
+- [x] Analyze image usage and requirements <!-- id: 14 -->
+- [x] Generate/Download high-quality images <!-- id: 15 -->
+- [x] Replace remote URLs with local assets <!-- id: 16 -->
+- [x] Awwwards Design Critique & Improvements <!-- id: 17 -->
+- [/] Update SmartQuote to use Naira (₦) <!-- id: 18 -->
+- [x] Debug and fix Smart Quote errors <!-- id: 19 -->
+- [x] Fix Gemini model 404 error <!-- id: 20 -->
+- [x] Integrate WhatsApp and Negotiable Pricing <!-- id: 21 -->
+- [x] Implement GSAP Scroll Animations & Magnetic Buttons <!-- id: 22 -->
+- [x] Add Testimonials Section <!-- id: 23 -->
+- [x] Implement Email Notifications for Quotes <!-- id: 24 -->
+- [x] Create Service Detail Pages <!-- id: 25 -->

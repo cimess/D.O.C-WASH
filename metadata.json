@@ -1,0 +1,8 @@
+{
+  "name": "D.O.C Wash",
+  "description": "Premium AI-integrated cleaning services for industrial and residential needs.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}
